@@ -1,0 +1,739 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Website Layout</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="reponsive.css">
+</head>
+
+<body>
+    <div class="banner_img">
+        <img src="/assets/img/home_banner.png" alt>
+    </div>
+    <div class="decor" style="position: absolute;width: 100%;">
+        <img class="decor_corner_1" src="/assets/img/decor_corner_1.png" style="
+        position: absolute;
+        z-index: -1;
+        left: -8px;
+        top: 38rem;
+    " alt>
+        <img src="/assets/img/decor_corner_2.png" style="
+                right: 0;
+                position: absolute;
+                z-index: -1;
+                top: 78rem;
+            " alt>
+    </div>
+    <div class="project_decor" style="
+        top: 120rem;
+    ">
+        <img src="/assets/img/project_decor_1.png" alt="" style="
+                top: -37rem;
+                left: 0rem;
+            ">
+        <img src="/assets/img/project_decor_2.png" alt="" style="
+                text-transform: uppercase;right: 0;
+                position: absolute;
+                top: 62.6rem;
+            ">
+    </div>
+    <div class="top_bar is_max_width">
+        <p style="color: #1D407D;font-style: italic;display: flex;align-items: center;gap: .2rem;"><img
+                src="assets/img/phone.png" alt="">HOTLINE: 1900 2863 </span>
+        <div>
+            <div class="search-container">
+                <input type="text" placeholder="Search...">
+                <img src="assets/img/search.png" alt="Search Icon" class="search-icon">
+            </div>
+
+            <div class="lang_dropdown">
+                <img src="assets/img/vn.png" alt> 
+            </div>
+        </div>
+    </div>
+    <hr style="color: #CDD3E9;background: #CDD3E9;border: 1px solid #CDD3E9;margin-top: 5px;">
+    <header class="is_max_width p-0 mt-1 mb-5">
+
+        <div class="header-container">
+            <div class="logo">
+                <img src="/assets/img/logo.png" alt>
+            </div>
+
+            <nav class="menu" style="/* margin-right: 5rem; */margin-top: -5px;gap: 28px;">
+                <ul style="display: flex;gap: 28px;">
+                    <div style="display: none; padding: 0px ; padding-top: 10px; padding-right: 10px;"
+                        class="close_menu" onclick="closeMenu()" style="cursor: pointer;">
+                        <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="30" height="30"
+                            viewBox="0 0 50 50">
+                            <path>
+                                d="M 9.15625 6.3125 L 6.3125 9.15625 L 22.15625 25 L 6.21875 40.96875 L 9.03125 43.78125
+                                L 25 27.84375 L 40.9375 43.78125 L 43.78125 40.9375 L 27.84375 25 L 43.6875 9.15625 L
+                                40.84375 6.3125 L 25 22.15625 Z">
+                            </path>
+                        </svg>
+                    </div>
+
+                    <script>
+                        function closeMenu() {
+                            const menu = document.querySelector('.menu');
+                            menu.classList.remove('mobile_menu');
+                        }
+                    </script>
+                    <li style=" padding: 3px; cursor: pointer;">
+                        <div class="green_bg" >
+                            <a href="#banner">Trang chủ</a>
+                        </div>
+                    </li>
+                    <li class="green_bg"><a href="#about-us">Giới thiệu</a></li>
+                    <li class="green_bg"><a href="#services">lĩnh vực</a></li>
+                    <li class="green_bg"><a href="#projects">dự án</a></li>
+                    <li class="green_bg"><a href="#recruitment">tin tức</a></li>
+                    <li class="green_bg"><a href="#news">tuyển dụng</a></li>
+                    <li class="green_bg"><a href="#partners">liên hệ</a></li>
+                </ul>
+            </nav>
+            <div style="display: none;" class="menu_icon">
+
+                <svg style="width: 30px; height: 30px; cursor: pointer; fill: #1D407D;"
+                    xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="30" height="30" viewBox="0 0 50 50"
+                    onclick="toggleMenu()">
+                    <path
+                        d="M 0 7.5 L 0 12.5 L 50 12.5 L 50 7.5 L 0 7.5 z M 0 22.5 L 0 27.5 L 50 27.5 L 50 22.5 L 0 22.5 z M 0 37.5 L 0 42.5 L 50 42.5 L 50 37.5 L 0 37.5 z">
+                    </path>
+                </svg>
+
+                <nav class="menu">
+                    <!-- Nội dung menu -->
+                </nav>
+
+                <script>
+                    function toggleMenu() {
+                        const menu = document.querySelector('.menu');
+                        menu.classList.toggle('mobile_menu');
+                    }
+                </script>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- Section Banner -->
+        <section id="banner" class="section-banner is_max_width p-0">
+            <h1>From concept</h1>
+            <h1>to creation.</h1>
+            <p>It is a long established fact that a reader will be distracted by the readable content.</p>
+            <div style="border: 1px solid #1FD392; padding: 6px;">
+                <div class="green_bg"
+                    style="background-color: #1FD392; padding:.7rem .9rem;width: 155.75px; cursor: pointer;">
+                    <a style="text-decoration: none; color: white; " href="#banner">Xem thêm</a>
+                </div>
+            </div>
+
+        </section>
+
+        <!-- Section About Us -->
+        <section id="about-us" class="section-about-us is_max_width p-0">
+            <div class="container p-0">
+                <div class="about-us-wrapper p-0">
+                    <!-- Phần ảnh trái -->
+                    <div class="about-us-images">
+                        <img src="assets/img/business-home-rev-slider-img-03.png" alt="Image 1" class="image image-1">
+                        <img src="assets/img/business-home-rev-slider-img-06.png" alt="Image 2" class="image image-2">
+                        <img src="assets/img/business-home-rev-slider-img-04.png" alt="Image 3" class="image image-3">
+                    </div>
+
+                    <!-- Phần thông tin phải -->
+                    <div class="about-us-info">
+                        <h2 style="color: #1D407D;
+                        font-size: 42.67px;
+                        text-transform: uppercase;">Về Chúng Tôi</h2>
+                        <img style="    
+                        width: 125.06px;
+                        height: 15.97px;
+                        border-radius: 0;
+                        margin-left: 32px;" src="assets/img/Group 43.png" alt="About Us" class="about-image">
+                        <p style="
+                        color: #1D407D;
+                        font-style: italic;
+                        text-decoration: italic;
+                        line-height: 29px;
+                        font-size: 14.58px;
+                        margin-top: 25px;
+                        margin-left: 6px;
+                    ">
+                            Scarcely on striking packages by so property in delicate. Up or well must less rent read
+                            walk so be. Easy sold at do hour sing spot. Any meant has cease too the decay. Since party
+                            burst am it match. By or blushes between besides offices noisier as. Sending
+                            do brought winding compass in. Paid day till shed only fact age its end.
+                        </p>
+                        <div style="    
+                        border: 1px solid #1FD392;
+                        padding: 3px;
+                        width: fit-content;
+                        margin-top: 28px;
+                        margin-left: 9px;">
+                            <div class="green_bg"
+                                style="background-color: #1FD392;padding:.7rem .9rem;width: 155.75px;text-align: center; cursor: pointer;">
+                                <a style="text-decoration: none; color: white; " href="#banner">Xem thêm</a>
+                            </div>
+                        </div>
+                        <h1 style="
+                     
+                        font-size: 90.08px;
+                        text-transform: uppercase;
+                        bottom: -120px;
+                        left: -14px;
+                        letter-spacing: -1px;
+                    
+                    " class="about-us-stroke">About Us</h1>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section Services -->
+        <section id="services" style="
+            position: relative;
+        " class="section-services is_max_width p-0 ">
+            <div class="container p-0">
+                <h2 style="
+                color: #1D407D;
+                font-size: 41.67px;
+                /* font-weight: 800; */
+                text-transform: uppercase;
+                letter-spacing: .7px;
+                ">Lĩnh Vực Hoạt Động</h2>
+                <img style="width: 129.06px;height: 17.97px;border-radius: 0;margin-bottom: 3rem;margin-left: 11px;"
+                    src="assets/img/Group 43.png" alt="About Us" class="about-image">
+                <div class="content" style="
+              display: flex;
+              align-items: start;
+              justify-content: space-between;
+              z-index: 2;
+          ">
+                    <div class style="
+                display: flex;
+                flex-direction: column;
+                gap: 2rem;
+            ">
+                        <div class="service-item" style="
+                position: relative;
+                margin-left: 2rem;
+            ">
+                            <span class="absolute_number" style="
+                position: absolute;
+                color: #DEE6F4;
+                z-index: -1;
+                font-size: 62.49px;
+                top: -2.4rem;
+                left: -2.4rem;
+            ">01</span>
+                <h1 style="
+                color: #1D407D;
+                font-size: 16.67px;
+            ">THIẾT KẾ KIẾN TRÚC</h1>
+                            <p class="border-gradient">Scarcely on striking packages by so property in delicate. Up or
+                                well must less rent read walk so be. Easy
+                                sold at do hour sing spot.</p>
+                        </div>
+                        <div class="service-item is_active" style="
+                                position: relative;
+                                margin-left: 2rem;
+                            ">
+                            <span class="absolute_number" style="
+                                position: absolute;
+                                color: #DEE6F4;
+                                z-index: -1;
+                                font-size: 62.49px;
+                                top: -2.4rem;
+                                left: -2.4rem;
+                            ">02</span>
+                            <h1 style="
+                                color: #1D407D;
+                                font-size: 16.67px;
+                            ">THIẾT KẾ KIẾN TRÚC
+                            </h1>
+                            <p class="border-gradient">Scarcely on striking packages by so property in delicate. Up or
+                                well must less rent read
+                                walk so be. Easy sold at do hour sing spot.
+                            </p>
+                        </div>
+                        <div class="service-item" style="
+                                                position: relative;
+                                                margin-left: 2rem;
+                                            ">
+                            <span class="absolute_number" style="
+                                                position: absolute;
+                                                color: #DEE6F4;
+                                                z-index: -1;
+                                                font-size: 62.49px;
+                                                top: -2.4rem;
+                                                left: -2.4rem;
+                                            ">03</span>
+                            <h1 style="
+                                                color: #1D407D;
+                                                font-size: 16.67px;
+                                            ">THIẾT KẾ KIẾN TRÚC
+                            </h1>
+                            <p class="border-gradient">Scarcely on striking packages by so property in delicate. Up or
+                                well must
+                                less rent read walk so be. Easy sold at do hour sing spot.</p>
+                        </div>
+                        <div class="service-item" style="
+                                        position: relative;
+                                        margin-left: 2rem;
+                                    ">
+                            <span class="absolute_number" 
+                            style="
+                                        position: absolute;
+                                        color: #DEE6F4;
+                                        z-index: -1;
+                                        font-size: 62.49px;
+                                        top: -2.4rem;
+                                        left: -2.4rem;
+                                    ">04</span>
+                            <h1 style="
+                                        color: #1D407D;
+                                        font-size: 16.67px;
+                                    ">THIẾT KẾ KIẾN TRÚC
+                            </h1>
+                            <p class="border-gradient">Scarcely on striking packages by so property in delicate. Up or
+                                well must less
+                                rent read walk so be. Easy sold at do hour sing spot.
+                            </p>
+                        </div>
+                    </div>
+                    <img class="markert_img" src="/assets/img/Group 45.png" style="
+                    margin-top: -14px;
+                    margin-right: -20px;
+                " alt>
+                </div>
+            </div>
+            <h1 style="
+            font-size: 90.08px;
+            text-transform: uppercase;
+            bottom: -8rem;
+            left: -1.3rem;
+            font-size: 80px;
+            font-weight: bold;
+            color: transparent;
+            -webkit-text-stroke: 2px #1FD392;
+            position: absolute;
+            bottom: -115px;
+            white-space: nowrap;
+            z-index: -1;
+            opacity: 0.4;
+            left: 235px;
+     " class="about-us-stroke">MARKET</h1>
+        </section>
+
+        <!-- Section Featured Projects -->
+        <section style="margin-top: 16rem;position: relative;" id="projects" class="section-projects">
+            <div class="container">
+
+                <div class="grid-layout">
+                    <!-- Cột danh mục -->
+                    <aside class="categories" style="
+                    margin-top: 16px;
+                    margin-left: 10px;
+                ">
+                        <p style="color: #1FD392;font-size: 20px;text-transform: uppercase;margin-bottom: 12px;">Dự án
+                            mới nhất</p>
+                        <h2 style="
+                                        color: #1D407D;
+                                        font-size: 45.67px;
+                                        text-transform: uppercase;
+                                        line-height: 54px;
+                                        letter-spacing: -2px;
+                                        ">Dự Án <br class="br_mb">Nổi Bật</h2>
+                        <img style="width: 120.06px; height: 14.97px; border-radius: 0; margin-bottom: 3rem;"
+                            src="assets/img/Group 43.png" alt="About Us" class="about-image">
+                        <ul>
+                            <li><a class="is_active" href="#">Tất
+                                    Cả</a></li>
+                            <li><a href="#">Thương Mại</a></li>
+                            <li><a href="#">Giáo Dục</a></li>
+                            <li><a href="#">Bệnh Viện</a></li>
+                            <li><a href="#">Thường Trú</a></li>
+                            <li><a href="#">Văn Phòng</a></li>
+                            <li><a href="#">Tái Thiết</a></li>
+                        </ul>
+                    </aside>
+                    
+                    <!-- Danh sách card -->
+                    <div class="projects-container">
+                        <div class="navigation">
+                            <button class="btn-prev">&#9664;</button>
+                            <button class="btn-next">&#9654;</button>
+                        </div>
+                        <div class="projects-grid">
+                            <div class="project-card">
+                                <div class="bg_hover_green"></div>
+                                <img src="/assets/img/9.png" alt>
+                                <div class="content">
+                                    <div style="
+                                    text-align: start;
+                                ">
+                                        <p style="
+                                    color: #1FD392;
+                                ">Tòa nhà thành phố</p>
+                                        <p>Thương mại</p>
+                                    </div>
+                                    <button
+                                        style="background: #1FD392; border: none; outline: none; padding: .5rem 1rem; font-size: 1.5rem; color: white;">+</button>
+                                </div>
+                            </div>
+                            <div class="project-card">
+                                <div class="bg_hover_green"></div>
+                                <img src="/assets/img/home-house-exterior-design-showing-tropical-pool-villa-with-greenery-garden-sun-bed-umbrella-pool-towels-floating-duck_41487-363.png"
+                                    alt>
+                                <div class="content">
+                                    <div style="    
+                                    text-align: start;
+                                ">
+                                        <p style="
+                                    color: #1FD392;
+                                ">Tòa nhà thành phố</p>
+                                        <p>Thương mại</p>
+                                    </div>
+                                    <button
+                                        style="background: #1FD392; border: none; outline: none; padding: .5rem 1rem; font-size: 1.5rem; color: white;">+</button>
+                                </div>
+                            </div>
+                            <div class="project-card">
+                                <div class="bg_hover_green"></div>
+                                <img src="/assets/img/home-house-exterior-design-showing-tropical-pool-villa-with-sun-bed_41487-558.png"
+                                    alt>
+                                <div class="content">
+                                    <div style="
+                                    text-align: start;
+                                ">
+                                        <p style="
+                                    color: #1FD392;
+                                ">Tòa nhà thành phố</p>
+                                        <p>Thương mại</p>
+                                    </div>
+                                    <button
+                                        style="background: #1FD392; border: none; outline: none; padding: .5rem 1rem; font-size: 1.5rem; color: white;">+</button>
+                                </div>
+                            </div>
+                            <div class="project-card">
+                                <div class="bg_hover_green"></div>
+                                <img src="/assets/img/home-house-exterior-design-showing-tropical-pool-villa-with-greenery-garden-sun-bed-umbrella-pool-towels-floating-duck_41487-363.png"
+                                    alt>
+                                <div class="content">
+                                    <div style="
+                                    text-align: start;
+                                ">
+                                        <p style="
+                                    color: #1FD392;
+                                ">Tòa nhà thành phố</p>
+                                        <p>Thương mại</p>
+                                    </div>
+                                    <button
+                                        style="background: #1FD392; border: none; outline: none; padding: .5rem 1rem; font-size: 1.5rem; color: white;">+</button>
+                                </div>
+                            </div>
+                            <div class="project-card">
+                                <div class="bg_hover_green"></div>
+                                <img src="/assets/img/home-house-exterior-design-showing-tropical-pool-villa-with-greenery-garden_41487-488.png"
+                                    alt>
+                                <div class="content">
+                                    <div style="
+                                    text-align: start;
+                                ">
+                                        <p style="
+                                    color: #1FD392;
+                                ">Tòa nhà thành phố</p>
+                                        <p>Thương mại</p>
+                                    </div>
+                                    <button
+                                        style="background: #1FD392; border: none; outline: none; padding: .5rem 1rem; font-size: 1.5rem; color: white;">+</button>
+                                </div>
+                            </div>
+                            <div class="project-card">
+                                <div class="bg_hover_green"></div>
+                                <img src="/assets/img/Rectangle.png" alt>
+                                <div class="content">
+                                    <div style="
+                                    text-align: start;
+                                ">
+                                        <p style="
+                                    color: #1FD392;
+                                ">Tòa nhà thành phố</p>
+                                        <p>Thương mại</p>
+                                    </div>  
+                                    <button
+                                        style="background: #1FD392; border: none; outline: none; padding: .5rem 1rem; font-size: 1.5rem; color: white;">+</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>  
+                    <h1 style="
+                    font-size: 90.08px;
+                    text-transform: uppercase;
+                    bottom: -8rem;
+                    left: -1.3rem;
+                    font-size: 84px;
+                    font-weight: bold;
+                    color: transparent;
+                    -webkit-text-stroke: 2px #1FD392;
+                    position: absolute;
+                    bottom: 2rme;
+                    white-space: nowrap;
+                    z-index: -1;
+                    opacity: 0.4;
+                    left: 24rem;  
+                    top: 48rem;
+             " class="about-us-stroke">PROJECTS</h1>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- Section Recruitment -->
+        <section id="recruitment" class="section-recruitment" style="margin: 286px 0;">
+            <div class="container recruitment-container p-0">
+                <!-- Cột trái: Ảnh -->
+                <div class="recruitment-image">
+                    <img src="assets/img/recuitment.png" alt="Tuyển Dụng"/>
+                </div>
+
+                <!-- Cột phải: Nội dung -->
+                <div class="recruitment-content">
+                    <h2 class="title">Tuyển Dụng</h2>
+                    <img style="width: 120.06px; height: 14.97px; border-radius: 0; margin-bottom: rem;"
+                        src="assets/img/Group 43.png" alt="About Us" class="about-image">
+                    <p style="color: #1D619F;">Resources exquisite set arranging moonlight sem him household had. Months
+                        had too ham cousin remove far spirit. She procuring the why performed continual improving.</p>
+                    <button class="apply-btn">Nộp Đơn >></button>
+                    <h2 class="recruitment-text">Recruitment</h2>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section Latest News -->
+        <section id="news" class="section-news is_max_width" style="
+        margin-bottom: 4rem;
+    ">
+            <div class="container">
+                <!-- Tiêu đề chính -->
+                <h2 class="news-title">Tin Mới Nhất</h2>
+                <img style="width: 232.06px;height: 14.97px;border-radius: 0;margin-bottom: rem;margin-bottom: 6rem;"
+                    src="assets/img/new_under.png" alt="About Us" class="about-image">
+                <img class="img_mb" style="position: absolute;left: 1rem;top: -4.4rem;" src="/assets/img/new_bg.png"
+                    alt="">
+                <!-- Ảnh nền -->
+                <div class="news-bg">
+
+                </div>
+
+                <!-- Danh sách bài viết -->
+                <div class="news-grid">
+                    <!-- Card bài viết 1 -->
+                    <div class="news-card">
+                        <img class="news-image" src="assets/img/new_1.png" alt="Tin tức 1">
+                        <div class="news-content">
+                            <p class="news-meta" style="
+                                display: flex;
+                                justify-content: space-around;
+                                align-items: center;
+                            "> <img src="/assets/img/time.png" alt="">5. december.2020 | <img src="/assets/img/eye.png"
+                                    alt=""> 328</p>
+                            <h3 class="news-heading">Lorem ipsum dolor sit amet aenean nisi sociis psum...</h3>
+                            <div class="news-action" style="
+                                justify-content: start;
+                                gap: 1rem;
+                                ">
+                                <span style="
+                                    color: #54547E;
+                                    font-weight: 600;
+                                ">Xem thêm</span>
+                                <button class="news-btn" style="
+                                    border-radius: 4px;
+                                ">+</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Card bài viết 2 -->
+                    <div class="news-card">
+                        <img class="news-image" src="assets/img/new_2.png" alt="Tin tức 1">
+                        <div class="news-content">
+                            <p class="news-meta" style="
+                                display: flex;
+                                justify-content: space-around;
+                                align-items: center;
+                            "> <img src="/assets/img/time.png" alt="">5. december.2020 | <img src="/assets/img/eye.png"
+                                    alt=""> 328</p>
+                            <h3 class="news-heading">Lorem ipsum dolor sit amet aenean nisi sociis psum...</h3>
+                            <div class="news-action" style="
+                                justify-content: start;
+                                gap: 1rem; 
+                                ">
+                                <span style="
+                                    color: #54547E;
+                                    font-weight: 600;
+                                ">Xem thêm</span>
+                                <button class="news-btn" style="
+                                    border-radius: 4px;
+                                ">+</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Card bài viết 3 -->
+                    <div class="news-card">
+                        <img class="news-image" src="assets/img/new_1.png" alt="Tin tức 1">
+                        <div class="news-content">
+                            <p class="news-meta" style="    
+                                display: flex;
+                                justify-content: space-around;
+                                align-items: center;
+                            "> <img src="/assets/img/time.png" alt="">5. december.2020 | <img src="/assets/img/eye.png"
+                                    alt=""> 328</p>
+                            <h3 class="news-heading">Lorem ipsum dolor sit amet aenean nisi sociis psum...</h3>
+                            <div class="news-action" style="
+                                justify-content: start;
+                                gap: 1rem;
+                                ">
+                                <span style="
+                                    color: #54547E;
+                                    font-weight: 600;
+                                ">Xem thêm</span>
+                                <button class="news-btn" style="
+                                    border-radius: 4px;
+                                ">+</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="view_more_blog"
+                    style="border: 1px solid #1FD392;padding: 3px;/* display: flex; */width: fit-content;margin: auto;margin-top: 11rem; cursor: pointer;">
+                    <div class="green_bg"
+                        style="background-color: #1FD392;padding:.7rem .9rem;width: 155.75px;text-align: center; cursor: pointer;">
+                        <a style="text-decoration: none; color: white; " href="#banner">Xem thêm</a>
+                    </div>
+                </div>
+            </div>
+            <h1 style="
+            font-size: 90.08px;
+            text-transform: uppercase;
+            bottom: -8rem;
+            left: -1.3rem;
+            font-size: 76px;
+            font-weight: bold;
+            color: transparent;
+            -webkit-text-stroke: 2px #1FD392;
+            position: absolute;
+            bottom: 2rme;
+            white-space: nowrap;
+            z-index: -1;
+            opacity: 0.4;
+            left: 44rem;
+            top: 41rem;
+            letter-spacing: 0px;
+            " class="about-us-stroke">LATEST NEWS</h1>
+        </section>
+
+
+        <!-- Section Partners -->
+        <section id="partners" style="
+        margin-bottom: -4.5rem;
+        z-index: 1000;
+        position: relative;
+    " class="section-partners">
+            <div class="container">
+                <h2 class="partners-title">Đối Tác Khách Hàng</h2>
+                <div class="partners-grid">
+                    <div class="partner-item">
+                        <img src="assets/img/p1.png" alt="Đối tác 1">
+                    </div>
+                    <div class="partner-item">
+                        <img src="assets/img/p2.png" alt="Đối tác 2">
+                    </div>
+                    <div class="partner-item"><picture>
+                        <source media="(min-width:)" srcset="">
+                        <img src="" alt="">
+                    </picture>
+                        <img src="assets/img/p3.png" alt="Đối tác 3">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <div class="footer-container is_max_width">
+            <div class="footer-column" style="
+            display: flex;
+            flex-direction: column;
+            align-items: start;
+        ">
+                <img src="assets/img/footer_logo.png" alt="Footer Logo" class="footer-logo">
+                <p class="footer-text" style="
+                text-align: start;
+                width: 29rem;
+                margin-bottom: 11px;
+                margin-top: 1rem;
+                line-height: 24px;
+                font-style: italic;
+                text-shadow: 1px 1px 4px #ffffff78;
+            ">
+                    ACEFIC5 là Nhà thầu chính thi công tại các dự án lớn tại Hà Nội, Đà Nẵng và nhiều tỉnh thành thành
+                    phố trên cả nước. Công ty Cổ phần Đầu tư và Xây dựng ACE5 Thái Bình Dương luôn đáp ứng được các yêu
+                    cầu khắt khe của các Chủ đầu tư, luôn đem đến cho khách
+                    hàng và xã hội các sản phẩm với chất lượng tốt nhất, tiến độ nhanh nhất mà vẫn đảm bảo tính an toàn
+                    và hiệu quả đầu tư trên mỗi công trình....
+                </p>
+                <p>Copyright 2019 Acefic5. All Rights Reserved</p>
+            </div>
+            <div class="footer-column" style="
+            display: flex;
+            flex-direction: column;
+            align-items: start;
+            margin-top: 1rem;
+            ">
+                <h1 class="footer-title">Dịch Vụ</h1>
+                <div class="footer-links" style="
+                display: flex;
+                flex-direction: column;
+                align-items: start;
+                gap: 1rem;
+                color: white !important;
+">
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms and Conditions</a>8
+                    <a href="#">Copyright Policy</a>
+                    <a href="#">Code of Conduct</a>
+                </div>
+            </div>
+            <div class="footer-column" style="
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    margin-top: 1rem;
+">
+                <h1 class="footer-title">Dịch Vụ</h1>
+                <div class="footer-services" style="
+    align-items: start;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+">
+                    <a href="#">Chemical Engineering Projects</a>
+                    <a href="#">Mining Engineering Construction</a>
+                    <a href="#">Engineering Welding Engineering</a>
+                    <a href="#">Welding Engineering</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+</body>
+
+</html>
